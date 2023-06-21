@@ -96,6 +96,8 @@ class Welcomeback extends StatelessWidget {
                                 ),
                               ),
                               Container(
+                                margin: EdgeInsets.fromLTRB(53 * fem, 0 * fem, 00 * fem, 00 * fem),
+
                                 width: 18 * fem,
                                 height: 14 * fem,
                                 child: Image.asset(
@@ -114,7 +116,7 @@ class Welcomeback extends StatelessWidget {
 
 
                     child: SizedBox(
-                      width: 4,
+                      width: 500,
                       height: 1.5,
                       child: Container(
                         decoration: BoxDecoration(
@@ -146,6 +148,8 @@ class Welcomeback extends StatelessWidget {
                         ),
 
                         Container(
+                          margin: EdgeInsets.fromLTRB(48 * fem, 0 * fem, 00 * fem, 00 * fem),
+
                           width: 18 * fem,
                           height: 20 * fem,
                           child: Image.asset(
