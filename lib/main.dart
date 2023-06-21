@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:goaluin_flutter_assignment/welcome.dart';
+import 'package:goaluin_flutter_assignment/welcomeback.dart';
 
 void main() {
   runApp(const MyApp());
@@ -108,6 +110,10 @@ class _MyHomePageState extends State<MyHomePage> {
                             child: Container(
                               child: ElevatedButton(
                                 onPressed: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(builder: (context) => Welcomeback()),
+                                  );
                                   // Action to perform when "SignIn" button is pressed
                                 },
                                 style: ElevatedButton.styleFrom(
@@ -135,6 +141,10 @@ class _MyHomePageState extends State<MyHomePage> {
                               child: OutlinedButton(
 
                                 onPressed: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(builder: (context) => Welcomeback()),
+                                  );
                                   // Action to perform when "SignUp" button is pressed
                                 },
                                 style: OutlinedButton.styleFrom(
@@ -175,20 +185,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ),
                     ),
-                    Container(
-                      padding: EdgeInsets.only( left: 160 , right: 160),
 
-                      child: SizedBox(
-                        width: 100,
-                        height: 5,
-                        child: Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(100),
-                            color: const Color(0x7f000000),
-                          ),
-                        ),
-                      ),
-                    ),
                   ],
                 ),
               ),
